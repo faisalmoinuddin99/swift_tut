@@ -1,23 +1,12 @@
-// Functions
-
-// function names should always be a verb 
-
-func printInstructor(name : String) {
-    // scope of the function
-    print("Instructor Name: ",name)
-}
-
-printInstructor(name: "Faisal Suleman") // function calling in swift we say call site
+// if/else - conditionals
 
 
-func add(firstNumber: Int, to secondNumber: Int) -> Int {
-    let sum = firstNumber + secondNumber 
+var isDarkModeOn = false
+
+
+if isDarkModeOn {
+    print("welcome to dark mode")
     
-    return sum 
+}else {
+    print("You are out of dark mode")
 }
-
-
-// to -> is a argument lable, it can be anything 
-
-let result = add(firstNumber: 10, to: 30)
-print(result)

@@ -1,12 +1,21 @@
-// if/else - conditionals
+// for loop
 
+let psg = ["Messi","Neymar","Mbappé","Ramos","Donaroma"]
 
-var isDarkModeOn = false
-
-
-if isDarkModeOn {
-    print("welcome to dark mode")
-    
-}else {
-    print("You are out of dark mode")
+for player in psg where player == "Ramos" {
+    print(player)
 }
+
+var randomInt : [Int] = []
+for _ in 0...10{
+   let randomNumber = Int.random(in : 0...100)
+    randomInt.append(randomNumber)
+}
+
+
+print(randomInt)
+
+/*
+Ramos
+[58, 84, 70, 88, 80, 96, 46, 20, 91, 8, 17]
+*/

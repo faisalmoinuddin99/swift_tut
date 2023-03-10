@@ -1,13 +1,23 @@
-// Dictionary
+// Functions
 
-// key: value pair
+// function names should always be a verb 
 
-let devices : [String: String] = [
-   "phone" : "iPhone X",
-   "laptop" : "2016 MacBook Pro",
-   "tablet" : "2018 iPad Pro",
-   "desktop" : "2017 iMac Pro",
+func printInstructor(name : String) {
+    // scope of the function
+    print("Instructor Name: ",name)
+}
+
+printInstructor(name: "Faisal Suleman") // function calling in swift we say call site
+
+
+func add(firstNumber: Int, to secondNumber: Int) -> Int {
+    let sum = firstNumber + secondNumber 
     
-    ]
+    return sum 
+}
 
-   print(devices["laptop"]) // constant time -- very fast 
+
+// to -> is a argument lable, it can be anything 
+
+let result = add(firstNumber: 10, to: 30)
+print(result)
